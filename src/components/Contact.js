@@ -1,7 +1,10 @@
 import React from 'react'
 import './Contact.css'
 import { db } from '../firebase';
-import { useState } from 'react'
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Contact() {
 
     const [name,setname] = useState("");
@@ -18,10 +21,10 @@ export default function Contact() {
             message : msg
         })
         .then(()=>{
-            alert('Message successfully submitted');
+            toast.success("Message sent successfully");
         })
         .catch((error) =>{
-            alert(error.message)
+            toast.error("Something went wrong.");
         })
 
         setname('');
@@ -31,7 +34,7 @@ export default function Contact() {
     }
   return (
    <>
-   <section id="contact" className="contact">
+   {/* <section id="contact" className="contact">
       <div className="container">
 
         <div className="section-title">
@@ -92,8 +95,83 @@ export default function Contact() {
         </div>
 
       </div>
-    </section>
+    </section> */}
    
+
+   <section class="contact section" id="contact">
+   <h1 class="section__title">Contact Me</h1>
+      <span class="section__subtitle">Get in touch</span>
+      <ToastContainer/>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">+91 7057035174</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">neerajshilwant19@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Pune, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="/" method="post" onSubmit={handleSubmit} class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" value={name} onChange={(e)=> setname(e.target.value)} class="contact__input" required/>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" value={email} onChange={(e)=> setemail(e.target.value)} class="contact__input" required/>
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Project</label>
+            <input type="text " value={subject} onChange={(e)=> setsubject(e.target.value)}  class="contact__input" required />
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea
+              value={msg} onChange={(e)=> setmsg(e.target.value)}
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              class="contact__input" required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type='submit' className='button button--flex '>
+            
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+              
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
    </>
   )
 }

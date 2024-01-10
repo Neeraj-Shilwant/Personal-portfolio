@@ -1,0 +1,48 @@
+[debug] [2024-01-10T19:27:01.293Z] ----------------------------------------------------------------------
+[debug] [2024-01-10T19:27:01.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-10T19:27:01.300Z] CLI Version:   11.28.0
+[debug] [2024-01-10T19:27:01.301Z] Platform:      win32
+[debug] [2024-01-10T19:27:01.301Z] Node Version:  v18.17.0
+[debug] [2024-01-10T19:27:01.302Z] Time:          Thu Jan 11 2024 00:57:01 GMT+0530 (India Standard Time)
+[debug] [2024-01-10T19:27:01.303Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-10T19:27:01.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-10T19:27:01.414Z] > authorizing via signed-in user (neershil67@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\React js tut\Portfolio\my portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using personal-portfolio-neera-a416f. 
+[debug] [2024-01-10T19:27:27.858Z] > refreshing access token with scopes: []
+[debug] [2024-01-10T19:27:27.861Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-10T19:27:27.862Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T19:27:30.177Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-10T19:27:30.178Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T19:27:30.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f [none]
+[debug] [2024-01-10T19:27:32.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f 401
+[debug] [2024-01-10T19:27:32.421Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-10T19:27:32.424Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-10T19:27:32.611Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project personal-portfolio-neera-a416f. Please make sure the project exists and your account has permission to access it.

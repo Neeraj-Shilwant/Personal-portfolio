@@ -1,76 +1,344 @@
-import React from 'react'
-import './Body.css'
-import './Nicepage.css'
-import './Home.css'
+import React,{useState} from 'react';
+import "../App.css";
+
+import { Typewriter } from 'react-simple-typewriter';
+
+
 
 export default function Body() {
+  const [activeTab, setActiveTab] = useState('#work');
+  
+
+  const handleTabClick = (target) => {
+    setActiveTab(target);
+  }
+
+
+
   return (
     <>
-    <section class="u-clearfix u-section-1" id="">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/Untitleddesign.png" alt="" data-image-width="500" data-image-height="500"/>
-        <h3 class="u-custom-font u-font-montserrat u-text u-text-default u-text-1">Hello, I'am&nbsp;<br/>
-          <span style={{fontWeight: "700"}}>Neeraj Shilwant</span>
-        </h3>
-        <p class="u-align-center u-text u-text-2"> Welcome to my personal portfolio! I am a skilled data scientist with a passion for leveraging data to drive insights and solve complex problems. My expertise lies in collecting, cleaning, and analyzing large and complex data sets using advanced statistical and computational methods.</p>
-        <div class="u-border-2 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/neeraj-r-shilwant/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/Neeraj-Shilwant"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/neerajshilwant/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <img src="img/main.png" alt="" />
+                
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title" >Hi, I am Neeraj</h1>
+
+              <h3 class="home__subtitle" >
+                <Typewriter 
+                words={['Web Developer','Data Scientist','React Developer','Data Analytics']}
+                typeSpeed={80}
+                cursor
+                cursorStyle='<'
+                loop={0}
+
+                />
+              </h3>
+              
+          
+              
+              <p class="home__description">
+                I have a passion for building intuitive, user-friendly
+                interfaces that provide an enjoyable and seamless user
+                experience.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    {/* <!--==================== ABOUT ====================--> */}
+
+    <section class="about section" id="about">
+      <h1 class="section__title">About Me</h1>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <img src="img/about.jpeg" alt="" class="about__image" />
+
+        <div class="about__data">
+          <p class="about__description">
+            I have 3+ years of experience and a deep understanding of various
+            technologies such as React, Next, Machine Learning, Data Science <br />
+            I am dedicated to keeping up with the latest trends and techniques
+            in Software Technology, and I am constantly learning and expanding my
+            skill set. I have a keen eye for detail and strive for perfection in
+            every project I work on. <br />
+            When I'm not coding, I enjoy exploring new technologies and work on
+            side projects. I am a sports enthusiast. I play football and go to
+            practice regularly.
+          </p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">3+</span>
+              <span class="about__info-name"
+                >Years <br />
+                experience</span
+              >
+            </div>
+
+            <div>
+              <span class="about__info-title">10+</span>
+              <span class="about__info-name"
+                >Projects <br />
+                completed</span
+              >
+            </div>
+
+            {/* <div>
+              <span class="about__info-title"></span>
+              <span class="about__info-name"
+                >Startup <br />
+                Experience</span
+              >
+            </div> */}
+          </div>
+
+          <div class="about__buttons">
+            <a
+              download=""
+              href="NeerajOff.pdf"
+              class="button button--flex"
+            >
+              Download Resume<i class="uil uil-download-alt button__icon"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
 
-    {/* About me */}
 
-    <section id="about" className="about">
-      <div className="container">
+    {/* <!--==================== SKILLS ====================--> */}
+    <section class="skills section" id="skills">
+      <h1 class="section__title">Skills</h1>
+      <span class="section__subtitle">My tech stack</span>
+      <div class="skills__container container grid">
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/next.svg"
+            alt="angular"
+          />
+          <div class="skills__container-name">Next</div>
+        </div>
 
-        <div className="row no-gutters">
-          <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div className="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-            <div className="content d-flex flex-column justify-content-center">
-            <h1 class="u-custom-font u-font-montserrat u-text u-text-default u-text-grey-90 u-text-1">About me</h1>
-            <p class="u-text u-text-grey-50 u-text-2">An enthusiastic engineer who is a self-starter and capable to
-use technical skills for the betterment of the organization. </p>
-<h6 class="u-custom-font u-font-montserrat u-text u-text-3" style={{marginTop:"44px"}}>
-          <span style={{fontWeight : "700"}}>Name :&nbsp;  &nbsp;</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Neeraj Shilwant<br/>
-          <br/>
-          <span style={{fontWeight : "700"}}>Date of birth :&nbsp;</span>&nbsp; &nbsp; &nbsp; &nbsp;February 24, 2002<br/>
-          <br/>
-          <span style={{fontWeight : "700"}}>Address :&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pimpri,Pune-411017,India<br/>
-          <br/>
-          <span style={{fontWeight : "700"}}>Email :&nbsp;</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;neerajshilwant19@gmail.com<br/>
-          <br/>
-          <span style={{fontWeight : "700"}}>Phone :&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +91-705-703-5174
-        </h6>
-        <a href="https://drive.google.com/file/d/1od7blABLmDulv8BcvI_QcAqgj87wsJvX/view?usp=sharing" class="u-border-none u-btn u-btn-round u-button-style u-grey-90 u-hover-palette-1-light-1 u-radius-50 u-btn-1" style={{fontWeight: "700",marginTop:"50px"}}>Download CV</a>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/react.svg"
+            alt="react"
+          />
+          <div class="skills__container-name">React</div>
+        </div>
 
-            </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/python.png"
+            alt="vue"
+          />
+          <div class="skills__container-name">Python</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/mysql.svg"
+            alt="typescript"
+          />
+          <div class="skills__container-name">MySql</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/javascript.svg"
+            alt="javascript"
+          />
+          <div class="skills__container-name">JavaScript</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/html.svg"
+            alt="html"
+          />
+          <div class="skills__container-name">HTML</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/css.svg"
+            alt="css"
+          />
+          <div class="skills__container-name">CSS</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/gcp.svg"
+            alt="sass"
+          />
+          <div class="skills__container-name">Google Cloud Platform</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/skills/firebase.svg"
+            alt="firebase"
+          />
+          <div class="skills__container-name">Firebase</div>
+        </div>
+
+        {/* <!-- <div class="skills__container-box">
+                <img class="skills__container-img" src="/assets/img/skills/figma.svg" alt="figma">
+                <div class="skills__container-name">Figma</div>
+            </div> --> */}
+      </div>
+    </section>
+
+    {/* <!--==================== Journey ====================--> */}
+    <section class="qualification section">
+      <h1 class="section__title">Qualification</h1>
+      <span class="section__subtitle">My personal journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div
+            class={`qualification__button button--flex ${activeTab==='#work'? 'qualification__active':''}`}
+            onClick={() => handleTabClick('#work')}
+          >
+            <i class="uil uil-briefcase-alt qualification__icon"  > </i> Work
+          </div>
+
+          <div
+            class={`qualification__button button--flex ${activeTab==='#education' ? 'qualification__active' :''}`}
+            onClick={() => handleTabClick('#education')}
+          >
+            <i class="uil uil-graduation-cap qualification__icon"  > </i>
+            Education
           </div>
         </div>
 
-      </div>
-    </section>
+        <div class="qualification__sections">
+          {/* <!--==================== QUALIFICATOIN CONTENT 1====================--> */}
+          <div
+            class={`qualification__content ${activeTab==='#work'? 'qualification__active':''}`}
+            data-content
+            id="work"
+          >
+            {/* <!--==================== QUALIFICATOIN 1====================--> */}
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Web Developer and Technical Support</h3>
+                <span class="qualification__subtitle"> IT-IMPACT UNIQUE GATEWAY pvt. ltd. </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2021-Currently Working
+                </div>
+              </div>
 
-
-    <section class="u-clearfix u-palette-1-light-2 u-section-3" id="sec-75af">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-1-base u-text-1">My Strengths</h2>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1">
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-2">Ambition</h4>
-                <p class="u-text u-text-default u-text-3">Set clear and specific goals, creating a plan of action to achieve them, and working consistently towards them.</p>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
               </div>
             </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2">
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-4">Precision</h4>
-                <p class="u-text u-text-default u-text-5">Paying close attention to details, communicating information accurately and concisely, and striving for accuracy in everything.</p>
+
+            {/* <!--==================== QUALIFICATOIN 2====================--> */}
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                {/* <span class="qualification__line"></span> */}
+              </div>
+              <div>
+                <h3 class="qualification__title">Data Science Intern</h3>
+                <span class="qualification__subtitle"> Personifwy </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> Oct-2022 - Dec-2022
+                </div>
               </div>
             </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3">
-                <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-6">Assertive</h4>
-                <p class="u-text u-text-default u-text-7">A positive attitude is characterized by optimism, resilience, and a belief in one's ability to overcome challenges and achieve success.</p>
+
+            
+          </div>
+
+          {/* <!--==================== QUALIFICATOIN CONTENT 2====================--> */}
+          <div class={`qualification__content ${activeTab==='#education' ? 'qualification__active' :''} `} 
+          data-content 
+          id="education">
+            {/* <!--==================== QUALIFICATOIN 1====================--> */}
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">HSC, Science</h3>
+                <span class="qualification__subtitle">
+                  Jai Hind High School
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2019-2020
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            {/* <!--==================== QUALIFICATOIN 2====================--> */}
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                {/* <!-- <span class="qualification__line"></span> --> */}
+              </div>
+              <div>
+                <h3 class="qualification__title">B.Tech, Artificial Intelligence and Data Science</h3>
+                <span class="qualification__subtitle"> D.Y Patil College of Engineering </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> 2020  -2024
+                </div>
               </div>
             </div>
           </div>
@@ -78,42 +346,10 @@ use technical skills for the betterment of the organization. </p>
       </div>
     </section>
 
-    <section class="u-clearfix u-section-4" id="skills">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-custom-font u-font-montserrat u-text u-text-black u-text-default u-text-1">Why ​Me</h1>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-style u-hover-feature u-list-item u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-hover-feature u-icon u-icon-1"><img src="images/5669529.png" alt=""/></span>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-2">Database Management</h3>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-3">MySQL</h3>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-hover-feature u-list-item u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-hover-feature u-icon u-icon-2"><img src="images/826118.png" alt=""/></span>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-4">Machine Learning</h3>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-5">Python</h3>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-hover-feature u-list-item u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-file-icon u-hover-feature u-icon u-icon-3"><img src="images/9172978.png" alt=""/></span>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-6">Frontend Development</h3>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-7">React Js</h3>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-hover-feature u-list-item u-repeater-item u-shape-rectangle u-list-item-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-file-icon u-hover-feature u-icon u-icon-4"><img src="images/921540.png" alt=""/></span>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-8">Data Analytics</h3>
-                <h3 class="u-custom-font u-font-montserrat u-hover-feature u-text u-text-grey-90 u-text-9">Power BI and Python</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
+    
+    
     
     </>
   )
 }
+

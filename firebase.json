@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "portfolio-neeraj-123",
+    "site": "portfolio-neeraj",
     "public": "build",
     "ignore": [
       "firebase.json",

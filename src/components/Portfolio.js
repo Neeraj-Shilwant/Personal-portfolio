@@ -1,89 +1,82 @@
-import React from 'react'
-import './Portfolio.css'
-import './Home.css'
+import React from 'react';
 import './Nicepage.css'
-import './Body.css'
-export default function Portfolio() {
+import { Col, Row,Container } from 'react-bootstrap';
+import { Card } from './Card';
+import '../components/css/vendor/animate.css/animate.css';
+const Portfolio = () => {
+  const data = [
+    {
+      image: "img/portfolio/usergit.png",
+      title: "UserGit Analyzer",
+      subtitle: "Github Profile Rater",
+      demo: "https://github.com/Neeraj-Shilwant/Usergit"
+    },
+    {
+      image: "img/portfolio/whiteboard.png",
+      title: "Real Time White Board",
+      subtitle: "Collaboration Allowed",
+      demo: "https://github.com/Neeraj-Shilwant/real-time-whiteboard"
+    },
+    {
+      image: "img/portfolio/kasarform.png",
+      title: "Custom Real Time Form",
+      subtitle: "Linked to Google Spreadsheet and Mongo DB.",
+      demo: "https://github.com/Neeraj-Shilwant/kasar-family"
+    },
+    {
+      image: "img/portfolio/chatbot.png",
+      title: "Ai Based Chatbot",
+      subtitle: "Personal Intent Based Chatting system.",
+      demo: "https://github.com/Neeraj-Shilwant/"
+    },
+    {
+      image: "img/portfolio/age.jpg",
+      title: "Real Time Age Prediction Model",
+      subtitle: "=> ",
+      demo: "https://github.com/Neeraj-Shilwant/Age-Prediction-CNN-Machine-learning-Resnet50"
+    },
+    
+  ]
+
   return (
-    <>
-    <section id="portfolio" className="team">
-      <div className="container">
+    <section class="portfolio section"  id="portfolio">
+      <h1 class="section__title">Portfolio</h1>
+      <span class="section__subtitle">Most recent work</span>
+      
+      <Container className='custom-container-width custom-grid'  >
+        
+        <Row  >
+           <Col>
+          {<Card image={data[0].image} title={data[0].title} subtitle={data[0].subtitle} demo={data[0].demo}/>}
+          </Col> 
+          <Col>
+          {<Card image={data[1].image} title={data[1].title} subtitle={data[1].subtitle} demo={data[1].demo}/>}
+          </Col>
+        </Row>
+        <Row>
+        <Col>
+          {<Card image={data[2].image} title={data[2].title} subtitle={data[2].subtitle} demo={data[2].demo}/>}
+          </Col> 
+          <Col>
+          {<Card image={data[3].image} title={data[3].title} subtitle={data[3].subtitle} demo={data[3].demo}/>}
+          </Col>
+        </Row>
+        <Row>
+        <Col>
+          {<Card image={data[4].image} title={data[4].title} subtitle={data[4].subtitle} demo={data[4].demo}/>}
+          </Col> 
+          {/* <Col>
+          {<Card image={data[0].image} title={data[0].title} subtitle={data[0].subtitle} demo={data[0].demo}/>}
+          </Col> */}
+        </Row>
 
-        <div className="section-title">
-        <h1 class="u-custom-font u-font-montserrat u-text u-text-black u-text-default u-text-1" style={{marginLeft:"441px"}}>Portfolio</h1>
-          {/* <p>Our team of IT professionals is comprised of experts with extensive knowledge and experience in their respective fields.With a passion for technology and a commitment to delivering results, our team is dedicated to delivering high-quality solutions for our clients.</p> */}
-        </div>
+      </Container>
 
-        <div className="row">
-
-          <div className="col-xl-3 col-lg-4 col-md-6">
-            <div className="member">
-              <img src="images/portfolio/port-1.png" className="img-fluid" alt=""/>
-              <div className="member-info">
-                <div className="member-info-content">
-                  <h4>Service Website</h4>
-                  <span>IT-IMPACT</span>
-                  <div className="social">
-                    <a href="https://itimpact-website.web.app/"><i className="bi bi-github"></i></a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
-            <div className="member">
-              <img src="images/portfolio/port-2.png" className="img-fluid" alt=""/>
-              <div className="member-info">
-                <div className="member-info-content">
-                  <h4>AI ML</h4>
-                  <span>Chatbot</span>
-                  <div className="social">
-                    <a href="https://github.com/Neeraj-Shilwant/Coffee-Shop-Chatbot/blob/main/Screenshots/Screenshot%202022-12-08%20225940.png"><i className="bi bi-github"></i></a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
-            <div className="member">
-              <img src="images/portfolio/port-3.jpg" className="img-fluid" alt=""/>
-              <div className="member-info">
-                <div className="member-info-content">
-                  <h4>OpenCV and ML</h4>
-                  <span>Age Prediction</span>
-                  <div className="social">
-                    <a href="https://github.com/Neeraj-Shilwant/Age-Prediction-CNN-Machine-learning-Resnet50"><i className="bi bi-github"></i></a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-            <div className="member">
-              <img src="images/portfolio/port-4.jpg" className="img-fluid" alt=""/>
-              <div className="member-info">
-                <div className="member-info-content">
-                  <h4>Other Project</h4>
-                  <span>Visit Github</span>
-                  <div className="social">
-                    <a href="https://github.com/Neeraj-Shilwant"><i className="bi bi-github"></i></a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+      
+      
+      
     </section>
-    </>
   )
 }
+
+export default Portfolio

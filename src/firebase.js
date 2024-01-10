@@ -8,8 +8,8 @@ const firebaseConfig = {
     projectId: "personal-portfolio-neera-a416f",
     storageBucket: "personal-portfolio-neera-a416f.appspot.com",
     messagingSenderId: "881453787184",
-    appId: "1:881453787184:web:5d5c6556acdc714054a5f5"
-};
+    appId: "1:881453787184:web:d9d3054de0e1586c54a5f5"
+  };
 
 // Use this to initialize the firebase App
 const firebaseApp =firebase.initializeApp(firebaseConfig);
