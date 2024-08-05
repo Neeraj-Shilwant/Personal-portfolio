@@ -1,13 +1,13 @@
-[debug] [2024-01-10T19:27:01.293Z] ----------------------------------------------------------------------
-[debug] [2024-01-10T19:27:01.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2024-01-10T19:27:01.300Z] CLI Version:   11.28.0
-[debug] [2024-01-10T19:27:01.301Z] Platform:      win32
-[debug] [2024-01-10T19:27:01.301Z] Node Version:  v18.17.0
-[debug] [2024-01-10T19:27:01.302Z] Time:          Thu Jan 11 2024 00:57:01 GMT+0530 (India Standard Time)
-[debug] [2024-01-10T19:27:01.303Z] ----------------------------------------------------------------------
+[debug] [2024-01-10T19:44:18.670Z] ----------------------------------------------------------------------
+[debug] [2024-01-10T19:44:18.675Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-10T19:44:18.677Z] CLI Version:   11.28.0
+[debug] [2024-01-10T19:44:18.677Z] Platform:      win32
+[debug] [2024-01-10T19:44:18.677Z] Node Version:  v18.17.0
+[debug] [2024-01-10T19:44:18.679Z] Time:          Thu Jan 11 2024 01:14:18 GMT+0530 (India Standard Time)
+[debug] [2024-01-10T19:44:18.680Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-01-10T19:27:01.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-01-10T19:27:01.414Z] > authorizing via signed-in user (neershil67@gmail.com)
+[debug] [2024-01-10T19:44:18.802Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-10T19:44:18.803Z] > authorizing via signed-in user (neershil67@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -31,16 +31,16 @@ Before we get started, keep in mind:
 [info] but for now we'll just set up a default project.
 [info] 
 [info] i  .firebaserc already has a default project, using personal-portfolio-neera-a416f. 
-[debug] [2024-01-10T19:27:27.858Z] > refreshing access token with scopes: []
-[debug] [2024-01-10T19:27:27.861Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-01-10T19:27:27.862Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-10T19:27:30.177Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
-[debug] [2024-01-10T19:27:30.178Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-01-10T19:27:30.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f [none]
-[debug] [2024-01-10T19:27:32.420Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f 401
-[debug] [2024-01-10T19:27:32.421Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2024-01-10T19:27:32.424Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-01-10T19:27:32.611Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-10T19:44:47.582Z] > refreshing access token with scopes: []
+[debug] [2024-01-10T19:44:47.585Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-10T19:44:47.585Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T19:44:47.847Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-01-10T19:44:47.848Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-10T19:44:47.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f [none]
+[debug] [2024-01-10T19:44:48.292Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f 401
+[debug] [2024-01-10T19:44:48.292Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-portfolio-neera-a416f {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-01-10T19:44:48.293Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-01-10T19:44:48.454Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at responseToError (C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
     at RetryOperation._fn (C:\Users\Neeraj\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

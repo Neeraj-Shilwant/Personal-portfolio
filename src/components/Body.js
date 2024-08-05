@@ -96,19 +96,18 @@ export default function Body() {
 
         <div class="about__data">
           <p class="about__description">
-            I have 3+ years of experience and a deep understanding of various
-            technologies such as React, Next, Machine Learning, Data Science <br />
+            I have 2+ years of experience and a deep understanding of various
+            technologies such as React, Machine Learning, Data Science <br />
             I am dedicated to keeping up with the latest trends and techniques
             in Software Technology, and I am constantly learning and expanding my
             skill set. I have a keen eye for detail and strive for perfection in
             every project I work on. <br />
             When I'm not coding, I enjoy exploring new technologies and work on
-            side projects. I am a sports enthusiast. I play football and go to
-            practice regularly.
+            side projects. I am a sports enthusiast. I play football and love reading personal development books.
           </p>
           <div class="about__info">
             <div>
-              <span class="about__info-title">3+</span>
+              <span class="about__info-title">2+</span>
               <span class="about__info-name"
                 >Years <br />
                 experience</span

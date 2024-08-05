@@ -24,16 +24,16 @@ const Portfolio = () => {
       demo: "https://github.com/Neeraj-Shilwant/kasar-family"
     },
     {
-      image: "img/portfolio/chatbot.png",
-      title: "Ai Based Chatbot",
-      subtitle: "Personal Intent Based Chatting system.",
-      demo: "https://github.com/Neeraj-Shilwant/"
+      image: "img/portfolio/cb.png",
+      title: "Professional Website",
+      subtitle: "",
+      demo: "https://cbtechnologies.co.in/"
     },
     {
-      image: "img/portfolio/age.jpg",
-      title: "Real Time Age Prediction Model",
-      subtitle: "=> ",
-      demo: "https://github.com/Neeraj-Shilwant/Age-Prediction-CNN-Machine-learning-Resnet50"
+      image: "img/portfolio/sa.png",
+      title: "Professional Website",
+      subtitle: "",
+      demo: "https://sakaararchitects.com/"
     },
     
   ]
