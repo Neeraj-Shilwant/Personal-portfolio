@@ -1,4 +1,4 @@
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import './App.css';
 import Body from './components/Body';
 import Contact from './components/Contact';
@@ -8,7 +8,7 @@ import Portfolio from './components/Portfolio';
 
 import "../src/assets/js/main"
 import Projectinmind from './components/Projectinmind';
-import Service from './components/Service';
+// import Service from './components/Service';
 
 
 function App() {
