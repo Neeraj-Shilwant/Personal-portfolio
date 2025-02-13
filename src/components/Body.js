@@ -95,19 +95,19 @@ export default function Body() {
         <img src="img/about.jpeg" alt="" class="about__image" />
 
         <div class="about__data">
-          <p class="about__description">
-            I have 2+ years of experience and a deep understanding of various
-            technologies such as React, Machine Learning, Data Science <br />
-            I am dedicated to keeping up with the latest trends and techniques
-            in Software Technology, and I am constantly learning and expanding my
-            skill set. I have a keen eye for detail and strive for perfection in
-            every project I work on. <br />
-            When I'm not coding, I enjoy exploring new technologies and work on
-            side projects. I am a sports enthusiast. I play football and love reading personal development books.
-          </p>
+        <p class="about__description">
+    I am a software engineer with experience in developing scalable applications and implementing 
+    data-driven solutions. My expertise lies in frontend development with React.js, along with skills 
+    in machine learning, data analytics, and visualization. <br />
+    I am dedicated to staying updated with the latest trends in software technology and continuously 
+    expanding my skill set. I have a strong problem-solving mindset and a keen eye for detail, ensuring 
+    high-quality software solutions. <br />
+    Beyond coding, I enjoy working on side projects, exploring emerging technologies, and engaging in 
+    sports. I am a football enthusiast and also enjoy reading personal development books.
+</p>
           <div class="about__info">
             <div>
-              <span class="about__info-title">2+</span>
+              <span class="about__info-title">1+</span>
               <span class="about__info-name"
                 >Years <br />
                 experience</span
@@ -115,7 +115,7 @@ export default function Body() {
             </div>
 
             <div>
-              <span class="about__info-title">10+</span>
+              <span class="about__info-title">6+</span>
               <span class="about__info-name"
                 >Projects <br />
                 completed</span
@@ -134,7 +134,7 @@ export default function Body() {
           <div class="about__buttons">
             <a
               download=""
-              href="NeerajOff.pdf"
+              href="mainResume.pdf"
               class="button button--flex"
             >
               Download Resume<i class="uil uil-download-alt button__icon"></i
@@ -150,15 +150,6 @@ export default function Body() {
       <h1 class="section__title">Skills</h1>
       <span class="section__subtitle">My tech stack</span>
       <div class="skills__container container grid">
-        <div class="skills__container-box">
-          <img
-            class="skills__container-img"
-            src="img/skills/next.svg"
-            alt="angular"
-          />
-          <div class="skills__container-name">Next</div>
-        </div>
-
         <div class="skills__container-box">
           <img
             class="skills__container-img"
@@ -269,13 +260,15 @@ export default function Body() {
             id="work"
           >
             {/* <!--==================== QUALIFICATOIN 1====================--> */}
+            
             <div class="qualification__data">
               <div>
-                <h3 class="qualification__title">Web Developer and Technical Support</h3>
-                <span class="qualification__subtitle"> IT-IMPACT UNIQUE GATEWAY pvt. ltd. </span>
+              <h3 class="qualification__title">Data Science Intern</h3>
+                <span class="qualification__subtitle"> Personifwy </span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> 2021-Currently Working
+                  <i class="uil uil-calendar-alt"></i> Oct-2022 - Dec-2022
                 </div>
+                
               </div>
 
               <div>
@@ -292,10 +285,10 @@ export default function Body() {
                 {/* <span class="qualification__line"></span> */}
               </div>
               <div>
-                <h3 class="qualification__title">Data Science Intern</h3>
-                <span class="qualification__subtitle"> Personifwy </span>
+              <h3 class="qualification__title">Software Developer Intern</h3>
+                <span class="qualification__subtitle"> IT-IMPACT UNIQUE GATEWAY pvt. ltd. </span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> Oct-2022 - Dec-2022
+                  <i class="uil uil-calendar-alt"></i> Jan 2024-July 2024
                 </div>
               </div>
             </div>

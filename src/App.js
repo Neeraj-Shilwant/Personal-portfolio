@@ -18,7 +18,7 @@ function App() {
 
     <Navbar />
     <Body />
-    <Service/>
+    {/* <Service/> */}
     <Portfolio />
     
     <Projectinmind />

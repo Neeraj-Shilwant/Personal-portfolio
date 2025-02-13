@@ -57,11 +57,11 @@ export default function Navbar() {
               </a>
             </li>
 
-            <li class="nav__item">
+            {/* <li class="nav__item">
               <a href="#services" class="nav__link noSelect">
                 <i class="uil uil-briefcase-alt nav__icon"></i> Services
               </a>
-            </li>
+            </li> */}
 
             <li class="nav__item">
               <a href="#portfolio" class="nav__link noSelect">

@@ -27,9 +27,9 @@ export default function Footer() {
           </div>
 
           <ul class="footer__links">
-            <li>
+            {/* <li>
               <a href="#services" class="footer__link">Services</a>
-            </li>
+            </li> */}
             <li>
               <a href="#portfolio" class="footer__link">Portfolio</a>
             </li>
